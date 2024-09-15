@@ -26,13 +26,14 @@ function App() {
     setcity("")
     setemail("")
     setmale("")
-    setmarried(false)
+    setmarried(false)     
     setpassword("")
     setname("")
   }
   return (
     <>
       <div>
+
         <form action="" onSubmit={(e) => handle(e)}>
           <input type="text" placeholder='Full Name' value={name} onChange={(e) => setname(e.target.value)} /> <br /> <br />
           <input type="email" placeholder='Email' value={email} onChange={(e) => setemail(e.target.value)} /> <br /> <br />
@@ -46,7 +47,6 @@ function App() {
           </select>  <br /> <br />
           male: <input type="radio" name='gender' value={male} onChange={() => setmale("male")} />
           female: <input type="radio" name='gender' value={male} onChange={(e) => setmale("female")} />  <br /> <br />
-         
           <button>submit</button>
         </form>
       </div>
@@ -55,4 +55,3 @@ function App() {
 }
 
 export default App
-//ab
